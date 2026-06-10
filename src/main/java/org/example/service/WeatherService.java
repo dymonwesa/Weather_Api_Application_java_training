@@ -1,5 +1,8 @@
 package org.example.service;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
@@ -17,10 +20,12 @@ public class WeatherService {
     public WeatherService(String city) {
         this.city = city;
     }
+
 //get
     public String getCity() {
         return city;
     }
+
 //set
     public void setCity(String city) {
         this.city = city;
@@ -41,7 +46,9 @@ public class WeatherService {
                 .build();
 
 
+
         System.out.println();
     }
+
 
 }
